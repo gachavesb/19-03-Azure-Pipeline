@@ -2,10 +2,10 @@ trigger:
 - main
 
 variables:
-tag: '$(Build.BuildId)'
+  tag: '$(Build.BuildId)'
 stages:
   - stage: Build
-    displayname: Build Stage
+    displayName: Build Stage
     jobs:
     - job: Build
       displayName: Build Job
